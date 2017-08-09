@@ -1,4 +1,6 @@
-﻿namespace AspNetCoreRateLimit
+﻿using AspNetCoreRateLimit.Models.Configurations;
+
+namespace AspNetCoreRateLimit
 {
     public interface IClientPolicyStore
     {

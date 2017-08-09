@@ -1,11 +1,11 @@
-﻿using System;
-using System.Linq;
-using System.Net;
-using Microsoft.AspNetCore.Http;
-
-namespace AspNetCoreRateLimit
+﻿namespace AspNetCoreRateLimit.Net
 {
-    public class ReversProxyIpParser : RemoteIpParser
+	using System;
+	using System.Linq;
+	using System.Net;
+	using Microsoft.AspNetCore.Http;
+
+	public class ReversProxyIpParser : RemoteIpParser
     {
         private readonly string _realIpHeader;
 

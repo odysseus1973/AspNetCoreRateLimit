@@ -1,4 +1,6 @@
-﻿using System;
+﻿using AspNetCoreRateLimit.Models;
+using AspNetCoreRateLimit.Models.Configurations;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 

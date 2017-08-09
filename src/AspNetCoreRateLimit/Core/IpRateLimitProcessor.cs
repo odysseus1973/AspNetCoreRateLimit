@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using AspNetCoreRateLimit.Core;
+using AspNetCoreRateLimit.Models;
+using AspNetCoreRateLimit.Models.Configurations;
+using AspNetCoreRateLimit.Net;
 
 namespace AspNetCoreRateLimit
 {

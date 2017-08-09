@@ -1,11 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-
-namespace AspNetCoreRateLimit
+﻿namespace AspNetCoreRateLimit.Net
 {
-    public class IpAddressUtil
+	using System;
+	using System.Net;
+	using System.Linq;
+	using System.Collections.Generic;
+
+	public class IpAddressUtil
     {
         public static bool ContainsIp(string rule, string clientIp)
         {
