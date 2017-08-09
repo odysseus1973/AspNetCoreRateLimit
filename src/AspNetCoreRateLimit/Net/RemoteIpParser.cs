@@ -1,10 +1,10 @@
-﻿using System.Collections.Generic;
-using System.Net;
-using Microsoft.AspNetCore.Http;
-
-namespace AspNetCoreRateLimit
+﻿namespace AspNetCoreRateLimit.Net
 {
-    public class RemoteIpParser : IIpAddressParser
+	using System.Net;
+	using System.Collections.Generic;
+	using Microsoft.AspNetCore.Http;
+
+	public class RemoteIpParser : IIpAddressParser
     {
         public bool ContainsIp(string ipRule, string clientIp)
         {

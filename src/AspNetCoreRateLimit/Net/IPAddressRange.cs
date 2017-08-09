@@ -1,21 +1,21 @@
-﻿using System;
-using System.Linq;
-using System.Net;
-using System.Text.RegularExpressions;
-
-namespace AspNetCoreRateLimit
+﻿namespace AspNetCoreRateLimit.Net
 {
-    /// <summary>
-    /// IP v4 and v6 range helper by jsakamoto
-    /// Fork from https://github.com/jsakamoto/ipaddressrange
-    /// </summary>
-    /// <example>
-    /// "192.168.0.0/24" 
-    /// "fe80::/10" 
-    /// "192.168.0.0/255.255.255.0" 
-    /// "192.168.0.0-192.168.0.255"
-    /// </example>
-    public class IpAddressRange
+	using System;
+	using System.Linq;
+	using System.Net;
+	using System.Text.RegularExpressions;
+
+	/// <summary>
+	/// IP v4 and v6 range helper by jsakamoto
+	/// Fork from https://github.com/jsakamoto/ipaddressrange
+	/// </summary>
+	/// <example>
+	/// "192.168.0.0/24" 
+	/// "fe80::/10" 
+	/// "192.168.0.0/255.255.255.0" 
+	/// "192.168.0.0-192.168.0.255"
+	/// </example>
+	public class IpAddressRange
     {
         public IPAddress Begin { get; set; }
 

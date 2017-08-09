@@ -1,4 +1,4 @@
-﻿namespace AspNetCoreRateLimit
+﻿namespace AspNetCoreRateLimit.Models
 {
     /// <summary>
     /// Stores the client IP, ID, endpoint and verb

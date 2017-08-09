@@ -1,10 +1,12 @@
-﻿using Microsoft.Extensions.Caching.Distributed;
-using Microsoft.Extensions.Options;
-using Newtonsoft.Json;
-
-namespace AspNetCoreRateLimit
+﻿namespace AspNetCoreRateLimit.Store
 {
-    public class DistributedCacheClientPolicyStore : IClientPolicyStore
+	using Microsoft.Extensions.Caching.Distributed;
+	using Microsoft.Extensions.Options;
+	using Newtonsoft.Json;
+
+	using Models.Configurations;
+
+	public class DistributedCacheClientPolicyStore : IClientPolicyStore
     {
         private readonly IDistributedCache _memoryCache;
 

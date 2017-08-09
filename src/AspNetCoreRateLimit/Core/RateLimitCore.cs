@@ -1,9 +1,13 @@
-﻿using System;
-using System.Globalization;
-
-namespace AspNetCoreRateLimit
+﻿namespace AspNetCoreRateLimit.Core
 {
-    public class RateLimitCore
+	using System;
+	using System.Globalization;
+
+	using Store;
+	using Models;
+	using Models.Configurations;
+
+	public class RateLimitCore
     {
         private readonly RateLimitCoreOptions _options;
         private readonly IRateLimitCounterStore _counterStore;

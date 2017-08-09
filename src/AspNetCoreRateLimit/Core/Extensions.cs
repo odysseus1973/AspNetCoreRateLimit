@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace AspNetCoreRateLimit
+﻿namespace AspNetCoreRateLimit.Core
 {
-    public static class Extensions
+	using System;
+
+	public static class Extensions
     {
         public static bool ContainsIgnoreCase(this string source, string value, StringComparison stringComparison = StringComparison.CurrentCultureIgnoreCase)
         {

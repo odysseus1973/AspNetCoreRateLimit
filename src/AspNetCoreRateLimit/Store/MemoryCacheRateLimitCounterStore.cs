@@ -1,9 +1,9 @@
-﻿using Microsoft.Extensions.Caching.Memory;
-using System;
-
-namespace AspNetCoreRateLimit
+﻿namespace AspNetCoreRateLimit.Store
 {
-    public class MemoryCacheRateLimitCounterStore: IRateLimitCounterStore
+	using System;
+	using Microsoft.Extensions.Caching.Memory;
+
+	public class MemoryCacheRateLimitCounterStore: IRateLimitCounterStore
     {
         private readonly IMemoryCache _memoryCache;
 

@@ -1,14 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Caching.Memory;
-using Microsoft.Extensions.Options;
-
-namespace AspNetCoreRateLimit.Demo.Controllers
+﻿namespace AspNetCoreRateLimit.Demo.Controllers
 {
-    [Route("api/[controller]")]
+	using System.Collections.Generic;
+	using Microsoft.AspNetCore.Mvc;
+	using Microsoft.Extensions.Options;
+
+	using Store;
+	using Models;
+	using Models.Configurations;
+
+	[Route("api/[controller]")]
     public class IpRateLimitController : Controller
     {
         private readonly IpRateLimitOptions _options;

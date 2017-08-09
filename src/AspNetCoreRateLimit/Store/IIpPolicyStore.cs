@@ -1,6 +1,8 @@
-﻿namespace AspNetCoreRateLimit
+﻿namespace AspNetCoreRateLimit.Store
 {
-    public interface IIpPolicyStore
+	using Models.Configurations;
+
+	public interface IIpPolicyStore
     {
         bool Exists(string id);
         IpRateLimitPolicies Get(string id);

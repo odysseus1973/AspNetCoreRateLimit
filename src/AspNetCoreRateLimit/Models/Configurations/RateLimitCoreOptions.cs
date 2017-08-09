@@ -1,13 +1,22 @@
-﻿using System.Collections.Generic;
-
-namespace AspNetCoreRateLimit
+﻿namespace AspNetCoreRateLimit.Models.Configurations
 {
-    public class RateLimitCoreOptions
+	using System.Collections.Generic;
+
+	/// <summary>
+	///  Common configurations for Ip and Client rate limiting.
+	/// </summary>
+	public class RateLimitCoreOptions
     {
         public List<RateLimitRule> GeneralRules { get; set; }
 
+		/// <summary>
+		///  Endpoints that will be whitelisted from rate limiting.
+		/// </summary>
         public List<string> EndpointWhitelist { get; set; }
 
+		/// <summary>
+		///  Clients that will be whitelisted from rate limiting.
+		/// </summary>
         public List<string> ClientWhitelist { get; set; }
         
         /// <summary>
