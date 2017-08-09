@@ -1,8 +1,11 @@
-﻿using System;
-
-namespace AspNetCoreRateLimit
+﻿namespace AspNetCoreRateLimit.Models
 {
-    public class RateLimitRule
+	using System;
+
+	/// <summary>
+	///  General rule about rate limiting.
+	/// </summary>
+	public class RateLimitRule
     {
         /// <summary>
         /// HTTP verb and path 
