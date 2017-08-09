@@ -1,12 +1,16 @@
-﻿using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-
-namespace AspNetCoreRateLimit.Demo
+﻿namespace AspNetCoreRateLimit.Demo
 {
-    public class Startup
+	using Microsoft.AspNetCore.Builder;
+	using Microsoft.AspNetCore.Hosting;
+	using Microsoft.Extensions.Configuration;
+	using Microsoft.Extensions.DependencyInjection;
+	using Microsoft.Extensions.Logging;
+
+	using Store;
+	using Middleware;
+	using Models.Configurations;
+
+	public class Startup
     {
         public Startup(IHostingEnvironment env)
         {

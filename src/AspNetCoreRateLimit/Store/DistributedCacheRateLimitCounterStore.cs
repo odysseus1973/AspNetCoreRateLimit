@@ -1,10 +1,10 @@
-﻿using Microsoft.Extensions.Caching.Distributed;
-using Newtonsoft.Json;
-using System;
-
-namespace AspNetCoreRateLimit
+﻿namespace AspNetCoreRateLimit.Store
 {
-    public class DistributedCacheRateLimitCounterStore : IRateLimitCounterStore
+	using System;
+	using Microsoft.Extensions.Caching.Distributed;
+	using Newtonsoft.Json;
+
+	public class DistributedCacheRateLimitCounterStore : IRateLimitCounterStore
     {
         private readonly IDistributedCache _memoryCache;
 

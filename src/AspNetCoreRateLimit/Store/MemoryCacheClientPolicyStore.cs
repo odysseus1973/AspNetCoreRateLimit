@@ -1,12 +1,11 @@
-﻿using Microsoft.Extensions.Caching.Memory;
-using Microsoft.Extensions.Options;
-using System;
-using System.Collections.Generic;
-using AspNetCoreRateLimit.Models.Configurations;
-
-namespace AspNetCoreRateLimit
+﻿namespace AspNetCoreRateLimit.Store
 {
-    public class MemoryCacheClientPolicyStore: IClientPolicyStore
+	using Microsoft.Extensions.Caching.Memory;
+	using Microsoft.Extensions.Options;
+
+	using Models.Configurations;
+
+	public class MemoryCacheClientPolicyStore: IClientPolicyStore
     {
         private readonly IMemoryCache _memoryCache;
 

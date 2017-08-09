@@ -1,14 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using AspNetCoreRateLimit.Core;
-using AspNetCoreRateLimit.Models;
-using AspNetCoreRateLimit.Models.Configurations;
-using AspNetCoreRateLimit.Net;
-
-namespace AspNetCoreRateLimit
+﻿namespace AspNetCoreRateLimit.Core
 {
-    public class IpRateLimitProcessor
+	using System;
+	using System.Collections.Generic;
+	using System.Linq;
+
+	using Net;
+	using Store;
+	using Models;
+	using Models.Configurations;
+
+	public class IpRateLimitProcessor
     {
         private readonly IpRateLimitOptions _options;
         private readonly IRateLimitCounterStore _counterStore;

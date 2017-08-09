@@ -1,10 +1,11 @@
-﻿using Microsoft.Extensions.Caching.Memory;
-using Microsoft.Extensions.Options;
-using AspNetCoreRateLimit.Models.Configurations;
-
-namespace AspNetCoreRateLimit
+﻿namespace AspNetCoreRateLimit.Store
 {
-    public class MemoryCacheIpPolicyStore : IIpPolicyStore
+	using Microsoft.Extensions.Caching.Memory;
+	using Microsoft.Extensions.Options;
+
+	using Models.Configurations;
+
+	public class MemoryCacheIpPolicyStore : IIpPolicyStore
     {
         private readonly IMemoryCache _memoryCache;
 

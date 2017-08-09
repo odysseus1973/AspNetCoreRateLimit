@@ -1,8 +1,8 @@
-﻿using AspNetCoreRateLimit.Models.Configurations;
-
-namespace AspNetCoreRateLimit
+﻿namespace AspNetCoreRateLimit.Store
 {
-    public interface IClientPolicyStore
+	using Models.Configurations;
+
+	public interface IClientPolicyStore
     {
         bool Exists(string id);
         ClientRateLimitPolicy Get(string id);

@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace AspNetCoreRateLimit.Core
+﻿namespace AspNetCoreRateLimit.Core
 {
     public static class WildcardMatcher
     {

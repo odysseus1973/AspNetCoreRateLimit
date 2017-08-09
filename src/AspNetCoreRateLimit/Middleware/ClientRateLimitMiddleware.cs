@@ -1,15 +1,19 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
-using System;
-using System.Linq;
-using System.Threading.Tasks;
-using AspNetCoreRateLimit.Models;
-using AspNetCoreRateLimit.Models.Configurations;
+﻿using AspNetCoreRateLimit.Core;
 
-namespace AspNetCoreRateLimit
+namespace AspNetCoreRateLimit.Middleware
 {
-    public class ClientRateLimitMiddleware
+	using System;
+	using System.Linq;
+	using System.Threading.Tasks;
+	using Microsoft.Extensions.Logging;
+	using Microsoft.Extensions.Options;
+	using Microsoft.AspNetCore.Http;
+
+	using Store;
+	using Models;
+	using Models.Configurations;
+
+	public class ClientRateLimitMiddleware
     {
         private readonly RequestDelegate _next;
         private readonly ILogger<ClientRateLimitMiddleware> _logger;

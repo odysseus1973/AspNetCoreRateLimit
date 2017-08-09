@@ -1,8 +1,8 @@
-﻿using System;
-
-namespace AspNetCoreRateLimit
+﻿namespace AspNetCoreRateLimit.Store
 {
-    public interface IRateLimitCounterStore
+	using System;
+
+	public interface IRateLimitCounterStore
     {
         bool Exists(string id);
         RateLimitCounter? Get(string id);
